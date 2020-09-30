@@ -4,6 +4,7 @@ import { auth, provider } from './firebase';
 import './Login.css';
 import { actionTypes } from './reducer';
 import { useStateValue } from './StateProvider';
+import logo from './img/logo.png'
 
 function Login() {
 
@@ -21,7 +22,7 @@ function Login() {
   return (
     <div className="login">
       <div className="login__container">
-        <img src="" alt="" />
+        <img src={logo} alt="Application Logo" />
         <div className="login__text">
           <h1>Sign in to WhatsApp</h1>
         </div>
